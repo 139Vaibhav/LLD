@@ -1,4 +1,4 @@
-class car:
+class Car:
     def __init__(self, brand, model):
         self._brand = brand
         self._model = model
@@ -9,3 +9,14 @@ class car:
 
     def display_status(self):
         print(f"{self._brand} is running at {self._speed} km/h")
+
+if __name__ == "__main__":
+
+    merc = Car("Mercedes", "S-class")
+    tesla = Car("Tesla", "Model S")
+
+    merc.accelerate(50)
+    tesla.accelerate(80)
+
+    merc.display_status()
+    tesla.display_status()
